@@ -54,40 +54,12 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "G900W8")) {
-        /* kltecan */
-        property_set("ro.build.fingerprint", "samsung/kltevl/kltecan:4.3/JSS15J/N900W8VLUBMJ4:user/release-keys");
-        property_set("ro.build.description", "kltevl-user 4.3 JSS15J N900W8VLUBMJ4 release-keys");
-        property_set("ro.product.model", "SM-G900W8");
-        property_set("ro.product.device", "kltecan");
-        gsm_properties();
-    } else if (strstr(bootloader, "G900T")) {
-        /* kltetmo */
-        property_set("ro.build.fingerprint", "samsung/kltetmo/kltetmo:4.4.2/KOT49H/G900TUVU1BNH5:user/release-keys");
-        property_set("ro.build.description", "kltetmo-user 4.4.2 KOT49H G900TUVU1BNH5 release-keys");
-        property_set("ro.product.model", "SM-G900T");
-        property_set("ro.product.device", "kltetmo");
-        gsm_properties();
-    } else if (strstr(bootloader, "G900M")) {
-        /* klteub */
-        property_set("ro.build.fingerprint", "samsung/klteub/klte:4.4.2/KOT49H/G900MUBU1ANCE:user/release-keys");
-        property_set("ro.build.description", "klteub-user 4.4.2 KOT49H G900MUBU1ANCE release-keys");
-        property_set("ro.product.model", "SM-G900M");
-        property_set("ro.product.device", "klteub");
-        gsm_properties();
-    } else if (strstr(bootloader, "G900A")) {
-        /* klteatt */
-        property_set("ro.build.fingerprint", "samsung/klteatt/klte:4.4.2/KOT49H/G900AUCU2AND3:user/release-keys");
-        property_set("ro.build.description", "klteatt-user 4.4.2 KOT49H G900AUCU2AND3 release-keys");
-        property_set("ro.product.model", "SM-G900A");
-        property_set("ro.product.device", "klteatt");
-        gsm_properties();
-    } else {
-        /* kltexx */
-        property_set("ro.build.fingerprint", "samsung/kltexx/klte:4.4.2/KOT49H/G900FXXU1ANG2:user/release-keys");
-        property_set("ro.build.description", "kltexx-user 4.4.2 KOT49H G900FXXU1ANG2 release-keys");
-        property_set("ro.product.model", "SM-G900F");
-        property_set("ro.product.device", "kltexx");
+    if (strstr(bootloader, "SC02G")) {
+        /* kltedcmactive */
+        property_set("ro.build.fingerprint", "samsung/SC02G/SC02G:4.4.2/KOT49H/SC02GOMU1ANL1:user/release-keys");
+        property_set("ro.build.description", "kltedcmactive-user 4.4.2 KOT49H SC02GOMU1ANL1 release-keys");
+        property_set("ro.product.model", "SC-02G");
+        property_set("ro.product.device", "SC-02G");
         gsm_properties();
     }
 
