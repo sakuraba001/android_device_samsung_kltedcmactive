@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/kltedcmactive/full_klte.mk)
+$(call inherit-product, device/samsung/kltedcmactive/full_kltedcmactive.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
