@@ -3,5 +3,5 @@
 set -e
 
 export VENDOR=samsung
-export DEVICE=klte
+export DEVICE=kltedcmactive
 ./../../$VENDOR/klte-common/extract-files.sh $@
