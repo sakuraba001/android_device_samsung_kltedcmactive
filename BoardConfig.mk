@@ -21,6 +21,7 @@ TARGET_OTA_ASSERT_DEVICE := klte,kltedcmactive,sc02g,SC02G,SC-02G
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/kltedcmactive/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/samsung/klteactive
 TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_kactivelte_dcm_defconfig
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 androidboot.selinux=permissive
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
