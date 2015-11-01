@@ -25,7 +25,7 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/kltedcmactive/init/init_klte.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/kltedcmactive/init/init_klte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # NFC
